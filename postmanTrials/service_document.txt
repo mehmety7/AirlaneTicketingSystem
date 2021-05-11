@@ -1,0 +1,15 @@
+package.entity
+	Define columns, key, constructor and relation with other entity.
+	Insert some functions to manipulate data.
+package.repository
+	It is interface that can implement any repository package for CRUD operations such as Spring Jpa Repository for JPA data framework.
+	It is template for making CRUD operation inside function in service implementation package.(save, deletById, findAll etc.)
+package.service
+	It is interface that uses define functions prototypes to implementate in impl package (add, delete, getAll, get etc. (optional name and param name))
+package.service.impl
+	It has function implementations make CRUD operations. 
+	It has service package's function prototypes and it use repository's functions for database operation inside functions. 
+package.controller
+	Makes request, response, method mapping.
+	Declare the method for each CRUD operation and define paths.
+	Shortly, controller package makes application has clean communication with browser or something uses http. 
